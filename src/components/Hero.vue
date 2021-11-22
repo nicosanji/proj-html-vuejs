@@ -1,5 +1,5 @@
 <template>
-  <div class="my-hero container-fluid my-2">
+  <div class="my-hero container-fluid pb-5 mt-2 mb-5">
     <div class="row">
       <div class="col-5 px-5 py-5">
         <h1 class="mb-0 py-5">The biggest platform for your growth.</h1>

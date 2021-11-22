@@ -2,18 +2,24 @@
   <div id="app">
     <Header></Header>
     <Hero></Hero>
+    <OnlineMarketing></OnlineMarketing>
+    <TipsTricks></TipsTricks>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Hero from "./components/Hero.vue";
+import OnlineMarketing from "./components/OnlineMarketing.vue";
+import TipsTricks from "./components/TipsTricks.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Hero,
+    OnlineMarketing,
+    TipsTricks,
   },
 };
 </script>
@@ -86,11 +92,43 @@ header {
     top: 20px;
     right: 0;
   }
+  p {
+    color: #8e989f;
+  }
   .btn {
     background-color: #377dff;
     &:hover {
       background-color: black;
       border-color: black;
+    }
+  }
+}
+
+.online-marketing {
+  img {
+    width: 80%;
+  }
+  p {
+    color: #8e989f;
+  }
+  ul {
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+      padding-bottom: 0.5rem;
+      i {
+        color: #377dff;
+        padding-right: 2rem;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: #377dff;
+        }
+      }
     }
   }
 }
