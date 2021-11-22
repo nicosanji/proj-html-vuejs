@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header></Header>
+    <Hero></Hero>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
+import Hero from "./components/Hero.vue";
 
 export default {
   name: "App",
   components: {
     Header,
+    Hero,
   },
 };
 </script>
@@ -66,6 +69,22 @@ header {
       border-radius: 50%;
       z-index: -1;
     }
+  }
+  .btn {
+    background-color: #377dff;
+    &:hover {
+      background-color: black;
+      border-color: black;
+    }
+  }
+}
+
+.my-hero {
+  background-color: #f2f7ff;
+  img {
+    width: 90%;
+    top: 20px;
+    right: 0;
   }
   .btn {
     background-color: #377dff;
