@@ -83,6 +83,10 @@
         >
       </li>
     </ul>
+    <div class="container">
+      <h1>Ciao bootstrap</h1>
+      <h1><i class="fa fa-bomb" aria-hidden="true"></i></h1>
+    </div>
   </div>
 </template>
 

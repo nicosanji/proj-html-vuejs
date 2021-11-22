@@ -17,6 +17,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/css/font-awesome.min.css";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
