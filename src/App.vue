@@ -4,6 +4,7 @@
     <Hero></Hero>
     <OnlineMarketing></OnlineMarketing>
     <TipsTricks></TipsTricks>
+    <Features></Features>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from "./components/Header.vue";
 import Hero from "./components/Hero.vue";
 import OnlineMarketing from "./components/OnlineMarketing.vue";
 import TipsTricks from "./components/TipsTricks.vue";
+import Features from "./components/Features.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     Hero,
     OnlineMarketing,
     TipsTricks,
+    Features,
   },
 };
 </script>
@@ -129,6 +132,61 @@ header {
           color: #377dff;
         }
       }
+    }
+  }
+}
+
+.tips-tricks {
+  .d-flex {
+    img {
+      width: 30%;
+      height: 30%;
+      padding: 1rem;
+    }
+  }
+  .evidence-box {
+    border: 1px solid #00000014;
+    box-shadow: 10px 20px 20px #00000014;
+    h4 {
+      color: #377dff;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    color: #8e989f;
+  }
+}
+
+.features {
+  #circle-img {
+    position: absolute;
+    left: -25%;
+    z-index: -1;
+  }
+  .btn {
+    background-color: #377dff;
+    &:hover {
+      background-color: black;
+      border-color: black;
+    }
+  }
+  p {
+    color: #8e989f;
+  }
+  .box {
+    box-shadow: 0px 0px 30px 30px #00000014;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+    width: calc((100% / 4) - 1rem);
+    cursor: pointer;
+    &:hover {
+      color: white;
+      background-color: #6cdac1 !important;
+      box-shadow: none;
+      transition: 0.3s;
     }
   }
 }
