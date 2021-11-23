@@ -6,6 +6,7 @@
     <TipsTricks></TipsTricks>
     <Features></Features>
     <Testimonials></Testimonials>
+    <Posts></Posts>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import OnlineMarketing from "./components/OnlineMarketing.vue";
 import TipsTricks from "./components/TipsTricks.vue";
 import Features from "./components/Features.vue";
 import Testimonials from "./components/Testimonials.vue";
+import Posts from "./components/Posts.vue";
 
 export default {
   name: "App",
@@ -26,6 +28,7 @@ export default {
     TipsTricks,
     Features,
     Testimonials,
+    Posts,
   },
 };
 </script>
@@ -239,11 +242,17 @@ header {
   }
   h5 {
     display: inline-block;
-    padding: 0 0.3rem;
+    padding: 0.4rem;
     cursor: pointer;
     &:focus {
       color: #377dff;
     }
+  }
+}
+
+.posts {
+  p {
+    color: #8e989f;
   }
 }
 </style>
