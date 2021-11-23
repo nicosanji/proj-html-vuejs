@@ -19,35 +19,51 @@
       <div class="row mt-5">
         <div class="box col-3 bg-white rounded-1 px-3 py-4">
           <h4>Customized Invoices</h4>
-          <img src="../assets/img/511.png" alt="" />
+          <h1 class="i-blue">
+            <i class="fa fa-line-chart pt-3" aria-hidden="true"></i>
+          </h1>
         </div>
         <div class="box col-3 bg-white rounded-1 px-3 py-4">
           <h4>Stock Management</h4>
-          <img src="../assets/img/511.png" alt="" />
+          <h1 class="i-orange">
+            <i class="fa fa-paper-plane-o pt-3" aria-hidden="true"></i>
+          </h1>
         </div>
         <div class="box col-3 bg-white rounded-1 px-3 py-4">
           <h4>Receivable & Payables</h4>
-          <img src="../assets/img/511.png" alt="" />
+          <h1 class="i-green">
+            <i class="fa fa-address-card-o pt-3" aria-hidden="true"></i>
+          </h1>
         </div>
         <div class="box col-3 bg-white rounded-1 px-3 py-4">
           <h4>Manage Buying</h4>
-          <img src="../assets/img/511.png" alt="" />
+          <h1 class="i-blue">
+            <i class="fa fa-address-book pt-3" aria-hidden="true"></i>
+          </h1>
         </div>
         <div class="box col-3 bg-white rounded-1 px-3 py-4">
           <h4>Powerfull & Secure</h4>
-          <img src="../assets/img/511.png" alt="" />
+          <h1 class="i-orange">
+            <i class="fa fa-ravelry pt-3" aria-hidden="true"></i>
+          </h1>
         </div>
         <div class="box col-3 bg-white rounded-1 px-3 py-4">
           <h4>Fastest Return Filing</h4>
-          <img src="../assets/img/511.png" alt="" />
+          <h1 class="i-green">
+            <i class="fa fa-address-card-o pt-3" aria-hidden="true"></i>
+          </h1>
         </div>
         <div class="box col-3 bg-white rounded-1 px-3 py-4">
           <h4>Monthly Detailed</h4>
-          <img src="../assets/img/511.png" alt="" />
+          <h1 class="i-blue">
+            <i class="fa fa-book pt-3" aria-hidden="true"></i>
+          </h1>
         </div>
         <div class="box col-3 bg-white rounded-1 px-3 py-4">
           <h4>Product Management</h4>
-          <img src="../assets/img/511.png" alt="" />
+          <h1 class="i-orange">
+            <i class="fa fa-thumbs-o-up pt-3" aria-hidden="true"></i>
+          </h1>
         </div>
       </div>
     </div>

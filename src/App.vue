@@ -5,6 +5,7 @@
     <OnlineMarketing></OnlineMarketing>
     <TipsTricks></TipsTricks>
     <Features></Features>
+    <Testimonials></Testimonials>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Hero from "./components/Hero.vue";
 import OnlineMarketing from "./components/OnlineMarketing.vue";
 import TipsTricks from "./components/TipsTricks.vue";
 import Features from "./components/Features.vue";
+import Testimonials from "./components/Testimonials.vue";
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     OnlineMarketing,
     TipsTricks,
     Features,
+    Testimonials,
   },
 };
 </script>
@@ -183,10 +186,63 @@ header {
     width: calc((100% / 4) - 1rem);
     cursor: pointer;
     &:hover {
-      color: white;
+      color: white !important;
       background-color: #6cdac1 !important;
       box-shadow: none;
       transition: 0.3s;
+      h1 {
+        color: white;
+        transition: 0.3s;
+      }
+    }
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .i-blue {
+    color: #377dff;
+  }
+  .i-orange {
+    color: #ff796d;
+  }
+  .i-green {
+    color: #6cdac1;
+  }
+}
+
+.testimonials {
+  background-image: linear-gradient(#f2f7ff, white);
+  img {
+    width: 100%;
+  }
+  .w-50 {
+    margin-top: -5rem;
+  }
+  p {
+    color: #8e989f;
+  }
+  .col-5 {
+    background-image: url("assets/img/mark.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    background-blend-mode: luminosity;
+    box-shadow: 0 10px 20px #8e989f;
+    img {
+      width: 20%;
+    }
+    span {
+      font-size: 1.1rem;
+      color: #8e989f;
+    }
+  }
+  h5 {
+    display: inline-block;
+    padding: 0 0.3rem;
+    cursor: pointer;
+    &:focus {
+      color: #377dff;
     }
   }
 }
