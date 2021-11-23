@@ -7,6 +7,7 @@
     <Features></Features>
     <Testimonials></Testimonials>
     <Posts></Posts>
+    <Contact></Contact>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import TipsTricks from "./components/TipsTricks.vue";
 import Features from "./components/Features.vue";
 import Testimonials from "./components/Testimonials.vue";
 import Posts from "./components/Posts.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "App",
@@ -29,6 +31,7 @@ export default {
     Features,
     Testimonials,
     Posts,
+    Contact,
   },
 };
 </script>
@@ -253,6 +256,42 @@ header {
 .posts {
   p {
     color: #8e989f;
+  }
+}
+
+.contact {
+  .map-box {
+    top: 1rem;
+    left: 2rem;
+    .map-box-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .map-box-subtitle {
+      font-size: 0.9rem;
+      color: #495057;
+    }
+    a {
+      font-size: 0.9rem;
+      color: #377dff;
+    }
+    h1 {
+      color: #377dff;
+    }
+  }
+  .map-zoom {
+    bottom: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #495057;
+  }
+  .map-location {
+    bottom: 50%;
+    right: 50%;
+    h1 {
+      color: #ff796d;
+      font-size: 3.5rem;
+    }
   }
 }
 </style>
