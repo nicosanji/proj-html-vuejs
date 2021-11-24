@@ -4,8 +4,8 @@
     <div class="w-50 mx-auto mb-5">
       <h2 class="text-center">Our Testimonials</h2>
       <p class="text-center mt-4">
-        If you are planning on developing a product landing app or website, take
-        a look at this beautiful-crafted
+        If you are planning on developing a product landing app or website,<br />
+        take a look at this beautiful-crafted
       </p>
     </div>
     <div class="container pt-5">
@@ -19,9 +19,10 @@
             alt="test-w-img"
           />
           <h4 class="mb-3">Juila Aann <span>- COO Sofbox</span></h4>
-          <p class="text-center pt-2">
-            At ver eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium vero eos et consectetur accus adip adip.
+          <p class="py-3">
+            At ver eos et accusamus et iusto odio dignissimos <br />
+            ducimus qui blanditiis praesentium vero eos et consectetur <br />
+            accus adip adip.
           </p>
         </div>
         <div
@@ -33,9 +34,10 @@
             alt="test-w-img"
           />
           <h4 class="mb-3">Mac Znder <span>- Manager Sofbox</span></h4>
-          <p class="text-center pt-2">
-            At ver eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium vero eos et consectetur accus adip adip.
+          <p class="py-3">
+            At ver eos et accusamus et iusto odio dignissimos <br />
+            ducimus qui blanditiis praesentium vero eos et consectetur <br />
+            accus adip adip.
           </p>
         </div>
       </div>
@@ -79,6 +81,7 @@ export default {
     box-shadow: 0 10px 20px #8e989f;
     img {
       width: 20%;
+      margin-top: 2.5rem;
     }
     span {
       font-size: 1.1rem;

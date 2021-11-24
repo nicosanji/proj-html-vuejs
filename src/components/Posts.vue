@@ -23,8 +23,9 @@
             <div class="card-body">
               <h5 class="card-title my-3">Life Lack Meaning</h5>
               <p class="card-text pe-5">
-                It is a long established fact that a reader will be distracted
-                by the readable.
+                It is a long established fact that a<br />
+                reader will be distracted by the<br />
+                readable.
               </p>
             </div>
           </div>
@@ -44,8 +45,9 @@
             <div class="card-body">
               <h5 class="card-title my-3">Life Lack Meaning</h5>
               <p class="card-text pe-5">
-                It is a long established fact that a reader will be distracted
-                by the readable.
+                It is a long established fact that a<br />
+                reader will be distracted by the<br />
+                readable.
               </p>
             </div>
           </div>
@@ -65,8 +67,9 @@
             <div class="card-body">
               <h5 class="card-title my-3">Life Lack Meaning</h5>
               <p class="card-text pe-5">
-                It is a long established fact that a reader will be distracted
-                by the readable.
+                It is a long established fact that a<br />
+                reader will be distracted by the<br />
+                readable.
               </p>
             </div>
           </div>

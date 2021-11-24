@@ -78,23 +78,23 @@
         <h4 class="mb-4">Get in touch</h4>
         <div class="d-flex justify-content-between gap-3 mb-4">
           <input
-            class="border rounded p-1 w-50"
+            class="border rounded p-1 w-50 py-2"
             type="name"
             placeholder=" Your Name"
           />
           <input
-            class="border rounded p-1 w-50"
+            class="border rounded p-1 w-50 py-2"
             type="email"
             placeholder=" Your Email"
           />
         </div>
         <input
-          class="border rounded p-1 w-100 mb-4"
+          class="border rounded p-1 w-100 mb-4 py-2"
           type="text"
           placeholder=" Your Subject"
         />
         <textarea
-          class="border rounded p-1 w-100 mb-4"
+          class="border rounded p-1 w-100 mb-4 py-2"
           placeholder=" Your Message"
           cols="30"
           rows="10"
