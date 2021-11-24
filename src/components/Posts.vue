@@ -82,4 +82,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.posts {
+  p {
+    color: #8e989f;
+  }
+}
+</style>

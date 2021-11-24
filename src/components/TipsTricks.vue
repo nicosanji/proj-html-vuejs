@@ -43,4 +43,27 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.tips-tricks {
+  .d-flex {
+    img {
+      width: 30%;
+      height: 30%;
+      padding: 1rem;
+    }
+  }
+  .evidence-box {
+    border: 1px solid #00000014;
+    box-shadow: 10px 20px 20px #00000014;
+    h4 {
+      color: #377dff;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    color: #8e989f;
+  }
+}
+</style>

@@ -57,4 +57,41 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.testimonials {
+  background-image: linear-gradient(#f2f7ff, white);
+  img {
+    width: 100%;
+  }
+  .w-50 {
+    margin-top: -5rem;
+  }
+  p {
+    color: #8e989f;
+  }
+  .col-5 {
+    background-image: url("../assets/img/mark.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    background-blend-mode: luminosity;
+    box-shadow: 0 10px 20px #8e989f;
+    img {
+      width: 20%;
+    }
+    span {
+      font-size: 1.1rem;
+      color: #8e989f;
+    }
+  }
+  h5 {
+    display: inline-block;
+    padding: 0.4rem;
+    cursor: pointer;
+    &:focus {
+      color: #377dff;
+    }
+  }
+}
+</style>

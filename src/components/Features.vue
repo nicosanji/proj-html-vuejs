@@ -76,4 +76,52 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.features {
+  #circle-img {
+    position: absolute;
+    left: -25%;
+    z-index: -1;
+  }
+  .btn {
+    background-color: #377dff;
+    &:hover {
+      background-color: black;
+      border-color: black;
+    }
+  }
+  p {
+    color: #8e989f;
+  }
+  .box {
+    box-shadow: 0px 0px 30px 30px #00000014;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+    width: calc((100% / 4) - 1rem);
+    cursor: pointer;
+    &:hover {
+      color: white !important;
+      background-color: #6cdac1 !important;
+      box-shadow: none;
+      transition: 0.3s;
+      h1 {
+        color: white;
+        transition: 0.3s;
+      }
+    }
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .i-blue {
+    color: #377dff;
+  }
+  .i-orange {
+    color: #ff796d;
+  }
+  .i-green {
+    color: #6cdac1;
+  }
+}
+</style>

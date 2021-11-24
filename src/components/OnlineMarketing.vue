@@ -12,7 +12,7 @@
             <ul>
               <li v-for="(element, i) in marketingLinks" :key="i">
                 <i class="fa fa-check" aria-hidden="true"></i>
-                <a href="element.href">{{ element.txt }}</a>
+                <a :href="element.href">{{ element.txt }}</a>
               </li>
             </ul>
           </div>
@@ -29,7 +29,7 @@
             <ul>
               <li v-for="(element, i) in marketingLinks" :key="i">
                 <i class="fa fa-check" aria-hidden="true"></i>
-                <a href="element.href">{{ element.txt }}</a>
+                <a :href="element.href">{{ element.txt }}</a>
               </li>
             </ul>
           </div>
@@ -46,7 +46,7 @@
             <ul>
               <li v-for="(element, i) in marketingLinks" :key="i">
                 <i class="fa fa-check" aria-hidden="true"></i>
-                <a href="element.href">{{ element.txt }}</a>
+                <a :href="element.href">{{ element.txt }}</a>
               </li>
             </ul>
           </div>
@@ -84,4 +84,33 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.online-marketing {
+  img {
+    width: 80%;
+  }
+  p {
+    color: #8e989f;
+  }
+  ul {
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+      padding-bottom: 0.5rem;
+      i {
+        color: #377dff;
+        padding-right: 2rem;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: #377dff;
+        }
+      }
+    }
+  }
+}
+</style>

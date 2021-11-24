@@ -26,4 +26,23 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.my-hero {
+  background-color: #f2f7ff;
+  img {
+    width: 90%;
+    top: 20px;
+    right: 0;
+  }
+  p {
+    color: #8e989f;
+  }
+  .btn {
+    background-color: #377dff;
+    &:hover {
+      background-color: black;
+      border-color: black;
+    }
+  }
+}
+</style>
