@@ -37,7 +37,11 @@
       </div>
     </div>
     <div class="container-fluid d-flex flex-row-reverse">
-      <h1><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></h1>
+      <h1>
+        <a href="#top"
+          ><i class="fa fa-chevron-circle-up" aria-hidden="true"></i
+        ></a>
+      </h1>
     </div>
   </footer>
 </template>
@@ -140,15 +144,15 @@ footer {
         }
       }
     }
-    .active {
-      color: #377dff;
-      padding-bottom: 15px;
-      border-bottom: 2px solid #377dff;
-    }
   }
   h1 {
-    color: #8e989f;
-    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: #8e989f;
+      &:hover {
+        color: #377dff;
+      }
+    }
   }
 }
 </style>

@@ -19,9 +19,9 @@
             <a href="maps">Visualizza mappa più grande</a>
           </div>
           <div class="col-3 d-flex flex-column align-items-center">
-            <h1 class="mb-0">
+            <h2 class="mb-0">
               <i class="fa fa-random" aria-hidden="true"></i>
-            </h1>
+            </h2>
             <a class="px-2" href="indicazioni">Indicazi...</a>
           </div>
         </div>
@@ -133,8 +133,9 @@ export default {
       font-size: 0.9rem;
       color: #377dff;
     }
-    h1 {
+    h2 {
       color: #377dff;
+      transform: rotate(270deg);
     }
   }
   .map-zoom {
@@ -157,6 +158,12 @@ export default {
     height: 2.5rem;
     line-height: 2.5rem;
     font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: white;
+      background-color: #377dff;
+    }
   }
   .btn {
     background-color: #377dff;

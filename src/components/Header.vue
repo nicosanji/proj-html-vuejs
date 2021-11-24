@@ -65,6 +65,11 @@ header {
     width: 5%;
     height: 5%;
     margin-right: auto;
+    cursor: pointer;
+    transition: transform 1s;
+    &:hover {
+      transform: rotate(360deg);
+    }
   }
   ul {
     list-style: none;

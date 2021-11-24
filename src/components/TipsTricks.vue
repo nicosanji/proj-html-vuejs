@@ -9,7 +9,7 @@
           Faff about only a quid blower I don't wanto no agro bleeding chimney
           pot burke tosser cras nice one boot fanny.!
         </p>
-        <div class="evidence-box d-flex px-2 py-3">
+        <div tabindex="0" class="evidence-box d-flex px-2 py-3">
           <img src="../assets/img/510.png" alt="repo-analysis" />
           <div class="p-2">
             <h4 class="mb-3">Reporting Analysis</h4>
@@ -19,7 +19,7 @@
             </p>
           </div>
         </div>
-        <div class="d-flex px-2 py-3">
+        <div tabindex="0" class="evidence-box d-flex px-2 py-3">
           <img src="../assets/img/511.png" alt="technical-ceo" />
           <div class="p-2">
             <h4 class="mb-3">Technical SEO Audit</h4>
@@ -53,10 +53,15 @@ export default {
     }
   }
   .evidence-box {
-    border: 1px solid #00000014;
-    box-shadow: 10px 20px 20px #00000014;
-    h4 {
-      color: #377dff;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    &:focus {
+      border: 1px solid #00000014;
+      margin: -1px;
+      box-shadow: 10px 20px 20px #00000014;
+      h4 {
+        color: #377dff;
+      }
     }
   }
   img {

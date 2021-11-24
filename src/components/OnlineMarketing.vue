@@ -88,6 +88,11 @@ export default {
 .online-marketing {
   img {
     width: 80%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.5);
+    }
   }
   p {
     color: #8e989f;

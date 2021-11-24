@@ -87,6 +87,14 @@ export default {
 
 <style lang="scss">
 .posts {
+  .card {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 30px 30px #00000014;
+    }
+  }
   p {
     color: #8e989f;
   }

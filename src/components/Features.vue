@@ -100,14 +100,13 @@ export default {
     margin-bottom: 2rem;
     width: calc((100% / 4) - 1rem);
     cursor: pointer;
+    transition: 0.3s;
     &:hover {
       color: white !important;
       background-color: #6cdac1 !important;
       box-shadow: none;
-      transition: 0.3s;
       h1 {
         color: white;
-        transition: 0.3s;
       }
     }
     h1 {

@@ -41,7 +41,7 @@
           </p>
         </div>
       </div>
-      <div class="text-center my-4">
+      <div class="text-center my-4 pt-4">
         <h5 tabindex="0">
           <i class="fa fa-circle" aria-hidden="true"></i>
         </h5>
@@ -79,6 +79,20 @@ export default {
     background-color: white;
     background-blend-mode: luminosity;
     box-shadow: 0 10px 20px #8e989f;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &::after {
+      position: absolute;
+      bottom: -1rem;
+      content: "";
+      box-shadow: 0 10px 20px #8e989f;
+      height: 1rem;
+      width: 90%;
+    }
     img {
       width: 20%;
       margin-top: 2.5rem;
