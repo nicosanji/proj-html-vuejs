@@ -8,68 +8,18 @@
     </div>
     <div class="container">
       <div class="row justify-content-evenly pt-5">
-        <div class="col-4">
+        <div class="col-4" v-for="(element, i) in postsData" :key="i">
           <div class="card w-100 p-2 position-relative">
             <div
               class="position-absolute bg-white rounded-1 px-2 py-1 ms-2 mt-2"
             >
-              <p class="mb-0">November 28, 2019</p>
+              <p class="mb-0">{{ element.day }}</p>
             </div>
-            <img
-              src="../assets/img/19.jpg"
-              class="card-img-top"
-              alt="card-img-1"
-            />
+            <img :src="element.src" class="card-img-top" :alt="element.title" />
             <div class="card-body">
-              <h5 class="card-title my-3">Life Lack Meaning</h5>
+              <h5 class="card-title my-3">{{ element.title }}</h5>
               <p class="card-text pe-5">
-                It is a long established fact that a<br />
-                reader will be distracted by the<br />
-                readable.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card w-100 p-2 position-relative">
-            <div
-              class="position-absolute bg-white rounded-1 px-2 py-1 ms-2 mt-2"
-            >
-              <p class="mb-0">November 28, 2019</p>
-            </div>
-            <img
-              src="../assets/img/18.jpg"
-              class="card-img-top"
-              alt="card-img-1"
-            />
-            <div class="card-body">
-              <h5 class="card-title my-3">Life Lack Meaning</h5>
-              <p class="card-text pe-5">
-                It is a long established fact that a<br />
-                reader will be distracted by the<br />
-                readable.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card w-100 p-2 position-relative">
-            <div
-              class="position-absolute bg-white rounded-1 px-2 py-1 ms-2 mt-2"
-            >
-              <p class="mb-0">November 28, 2019</p>
-            </div>
-            <img
-              src="../assets/img/17.jpg"
-              class="card-img-top"
-              alt="card-img-1"
-            />
-            <div class="card-body">
-              <h5 class="card-title my-3">Life Lack Meaning</h5>
-              <p class="card-text pe-5">
-                It is a long established fact that a<br />
-                reader will be distracted by the<br />
-                readable.
+                {{ element.text }}
               </p>
             </div>
           </div>
@@ -81,7 +31,31 @@
 
 <script>
 export default {
-  name: "Posts",
+  name: "PostsPlus",
+  data() {
+    return {
+      postsData: [
+        {
+          src: require("../assets/img/19.jpg"),
+          day: "November 28, 2019",
+          title: "Life Lack Meaning",
+          text: "It is a long established fact that a reader will be distracted by the readable.",
+        },
+        {
+          src: require("../assets/img/18.jpg"),
+          day: "November 28, 2019",
+          title: "Life Lack Meaning",
+          text: "It is a long established fact that a reader will be distracted by the readable.",
+        },
+        {
+          src: require("../assets/img/17.jpg"),
+          day: "November 28, 2019",
+          title: "Life Lack Meaning",
+          text: "It is a long established fact that a reader will be distracted by the readable.",
+        },
+      ],
+    };
+  },
 };
 </script>
 

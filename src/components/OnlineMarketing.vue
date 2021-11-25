@@ -1,47 +1,13 @@
 <template>
   <div class="online-marketing container my-5 py-5">
     <div class="row mt-5">
-      <div class="col-4">
+      <div class="col-4" v-for="(element, i) in marketingData" :key="i">
         <div class="d-flex">
-          <div><img src="../assets/img/24.png" alt="online-mark" /></div>
+          <div><img :src="element.src" :alt="element.title" /></div>
           <div class="d-flex flex-column">
-            <h4>Online Marketing</h4>
+            <h4>{{ element.title }}</h4>
             <p>
-              It is a long established fact that a reader will be distracted.
-            </p>
-            <ul>
-              <li v-for="(element, i) in marketingLinks" :key="i">
-                <i class="fa fa-check" aria-hidden="true"></i>
-                <a :href="element.href">{{ element.txt }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="d-flex">
-          <div><img src="../assets/img/24.png" alt="online-mark" /></div>
-          <div class="d-flex flex-column">
-            <h4>Online Marketing</h4>
-            <p>
-              It is a long established fact that a reader will be distracted.
-            </p>
-            <ul>
-              <li v-for="(element, i) in marketingLinks" :key="i">
-                <i class="fa fa-check" aria-hidden="true"></i>
-                <a :href="element.href">{{ element.txt }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="d-flex">
-          <div><img src="../assets/img/24.png" alt="online-mark" /></div>
-          <div class="d-flex flex-column">
-            <h4>Online Marketing</h4>
-            <p>
-              It is a long established fact that a reader will be distracted.
+              {{ element.text }}
             </p>
             <ul>
               <li v-for="(element, i) in marketingLinks" :key="i">
@@ -61,6 +27,23 @@ export default {
   name: "OnlineMarketing",
   data() {
     return {
+      marketingData: [
+        {
+          src: require("../assets/img/24.png"),
+          title: "Online Marketing",
+          text: "It is a long established fact that a reader will be distracted.",
+        },
+        {
+          src: require("../assets/img/24.png"),
+          title: "Online Marketing",
+          text: "It is a long established fact that a reader will be distracted.",
+        },
+        {
+          src: require("../assets/img/24.png"),
+          title: "Online Marketing",
+          text: "It is a long established fact that a reader will be distracted.",
+        },
+      ],
       marketingLinks: [
         {
           txt: "SEO",
