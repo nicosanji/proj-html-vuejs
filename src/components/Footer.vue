@@ -123,12 +123,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/variables.scss";
+
 footer {
   p {
-    color: #8e989f;
+    color: $my-gray;
   }
   span {
-    color: #377dff;
+    color: $my-blue;
   }
   ul {
     list-style: none;
@@ -138,9 +140,9 @@ footer {
       padding: 0.25rem 0;
       a {
         text-decoration: none;
-        color: #8e989f;
+        color: $my-gray;
         &:hover {
-          color: #377dff;
+          color: $my-blue;
         }
       }
     }
@@ -148,9 +150,9 @@ footer {
   h1 {
     a {
       text-decoration: none;
-      color: #8e989f;
+      color: $my-gray;
       &:hover {
-        color: #377dff;
+        color: $my-blue;
       }
     }
   }

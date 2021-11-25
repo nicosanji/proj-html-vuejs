@@ -1,5 +1,5 @@
 <template>
-  <div class="contact container my-5">
+  <div class="contact container my-5" id="contact-us">
     <div class="w-50 mx-auto">
       <h2 class="text-center">Contact with our Team</h2>
       <p class="text-center mt-4 mb-5">
@@ -114,9 +114,11 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/variables.scss";
+
 .contact {
   p {
-    color: #8e989f;
+    color: $my-gray;
   }
   .map-box {
     top: 1rem;
@@ -131,10 +133,10 @@ export default {
     }
     a {
       font-size: 0.9rem;
-      color: #377dff;
+      color: $my-blue;
     }
     h2 {
-      color: #377dff;
+      color: $my-blue;
       transform: rotate(270deg);
     }
   }
@@ -153,7 +155,7 @@ export default {
     }
   }
   .social-box {
-    color: #377dff;
+    color: $my-blue;
     width: 2.5rem;
     height: 2.5rem;
     line-height: 2.5rem;
@@ -162,11 +164,11 @@ export default {
     transition: 0.3s;
     &:hover {
       color: white;
-      background-color: #377dff;
+      background-color: $my-blue;
     }
   }
   .btn {
-    background-color: #377dff;
+    background-color: $my-blue;
     &:hover {
       background-color: black;
       border-color: black;

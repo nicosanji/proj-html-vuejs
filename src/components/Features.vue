@@ -1,5 +1,5 @@
 <template>
-  <div class="features container-fluid position-relative">
+  <div class="features container-fluid position-relative" id="feature">
     <img id="circle-img" src="../assets/img/14.png" alt="circle-img" />
     <div class="container pt-5 pb-3">
       <div class="row">
@@ -77,6 +77,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/variables.scss";
+
 .features {
   #circle-img {
     position: absolute;
@@ -84,17 +86,17 @@ export default {
     z-index: -1;
   }
   .btn {
-    background-color: #377dff;
+    background-color: $my-blue;
     &:hover {
       background-color: black;
       border-color: black;
     }
   }
   p {
-    color: #8e989f;
+    color: $my-gray;
   }
   .box {
-    box-shadow: 0px 0px 30px 30px #00000014;
+    box-shadow: 0px 0px 30px 30px $my-darkgray;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 2rem;
@@ -114,7 +116,7 @@ export default {
     }
   }
   .i-blue {
-    color: #377dff;
+    color: $my-blue;
   }
   .i-orange {
     color: #ff796d;

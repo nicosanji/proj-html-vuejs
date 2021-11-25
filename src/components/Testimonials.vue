@@ -1,5 +1,5 @@
 <template>
-  <div class="testimonials mb-5">
+  <div class="testimonials mb-5" id="testimonials">
     <img class="" src="../assets/img/15.png" alt="wave-img" />
     <div class="w-50 mx-auto mb-5">
       <h2 class="text-center">Our Testimonials</h2>
@@ -60,8 +60,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/variables.scss";
+
 .testimonials {
-  background-image: linear-gradient(#f2f7ff, white);
+  background-image: linear-gradient($my-lightblue, white);
   img {
     width: 100%;
   }
@@ -69,7 +71,7 @@ export default {
     margin-top: -5rem;
   }
   p {
-    color: #8e989f;
+    color: $my-gray;
   }
   .col-5 {
     background-image: url("../assets/img/mark.png");
@@ -78,7 +80,7 @@ export default {
     background-position: center;
     background-color: white;
     background-blend-mode: luminosity;
-    box-shadow: 0 10px 20px #8e989f;
+    box-shadow: 0 10px 20px $my-gray;
     position: relative;
     cursor: pointer;
     transition: transform 0.3s;
@@ -89,7 +91,7 @@ export default {
       position: absolute;
       bottom: -1rem;
       content: "";
-      box-shadow: 0 10px 20px #8e989f;
+      box-shadow: 0 10px 20px $my-gray;
       height: 1rem;
       width: 90%;
     }
@@ -99,7 +101,7 @@ export default {
     }
     span {
       font-size: 1.1rem;
-      color: #8e989f;
+      color: $my-gray;
     }
   }
   h5 {
@@ -107,7 +109,7 @@ export default {
     padding: 0.4rem;
     cursor: pointer;
     &:focus {
-      color: #377dff;
+      color: $my-blue;
     }
   }
 }

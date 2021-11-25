@@ -1,11 +1,11 @@
 <template>
   <header>
-    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-center" id="home">
       <img src="../assets/img/logo-2.png" alt="logo-2" class="py-2" />
       <ul>
         <li v-for="(element, i) in headerLinks" :key="i" class="px-3">
           <a
-            @click.prevent="currentIndex = i"
+            @click="currentIndex = i"
             :class="i === currentIndex ? 'active' : ''"
             :href="element.href"
             >{{ element.txt }}</a
@@ -35,23 +35,23 @@ export default {
       headerLinks: [
         {
           txt: "Home",
-          href: "home",
+          href: "#home",
         },
         {
           txt: "About us",
-          href: "about-us",
+          href: "#about-us",
         },
         {
           txt: "Feature",
-          href: "feature",
+          href: "#feature",
         },
         {
           txt: "Testimonials",
-          href: "testimonials",
+          href: "#testimonials",
         },
         {
           txt: "Contact US",
-          href: "contact-us",
+          href: "#contact-us",
         },
       ],
     };
@@ -60,6 +60,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/variables.scss";
+
 header {
   img {
     width: 5%;
@@ -82,24 +84,24 @@ header {
         color: black;
         font-weight: 500;
         &:hover {
-          color: #377dff;
+          color: $my-blue;
         }
       }
     }
     .active {
-      color: #377dff;
+      color: $my-blue;
       padding-bottom: 15px;
-      border-bottom: 2px solid #377dff;
+      border-bottom: 2px solid $my-blue;
     }
   }
   p {
     margin-bottom: 0;
     cursor: pointer;
     &:hover {
-      color: #377dff;
+      color: $my-blue;
     }
     span {
-      background-color: #377dff;
+      background-color: $my-blue;
       color: white;
       font-weight: 500;
       right: 6px;
@@ -114,7 +116,7 @@ header {
     }
   }
   .btn {
-    background-color: #377dff;
+    background-color: $my-blue;
     &:hover {
       background-color: black;
       border-color: black;

@@ -1,5 +1,5 @@
 <template>
-  <div class="online-marketing container my-5 py-5">
+  <div class="online-marketing container my-5 py-5" id="about-us">
     <div class="row mt-5">
       <div class="col-4" v-for="(element, i) in marketingData" :key="i">
         <div class="d-flex">
@@ -68,6 +68,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/variables.scss";
+
 .online-marketing {
   img {
     width: 80%;
@@ -78,7 +80,7 @@ export default {
     }
   }
   p {
-    color: #8e989f;
+    color: $my-gray;
   }
   ul {
     list-style: none;
@@ -88,14 +90,14 @@ export default {
     li {
       padding-bottom: 0.5rem;
       i {
-        color: #377dff;
+        color: $my-blue;
         padding-right: 2rem;
       }
       a {
         text-decoration: none;
         color: black;
         &:hover {
-          color: #377dff;
+          color: $my-blue;
         }
       }
     }

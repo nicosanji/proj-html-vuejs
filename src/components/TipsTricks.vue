@@ -44,6 +44,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/variables.scss";
+
 .tips-tricks {
   .d-flex {
     img {
@@ -56,11 +58,11 @@ export default {
     cursor: pointer;
     transition: box-shadow 0.3s;
     &:focus {
-      border: 1px solid #00000014;
+      border: 1px solid $my-darkgray;
       margin: -1px;
-      box-shadow: 10px 20px 20px #00000014;
+      box-shadow: 10px 20px 20px $my-darkgray;
       h4 {
-        color: #377dff;
+        color: $my-blue;
       }
     }
   }
@@ -68,7 +70,7 @@ export default {
     width: 100%;
   }
   p {
-    color: #8e989f;
+    color: $my-gray;
   }
 }
 </style>

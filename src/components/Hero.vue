@@ -27,18 +27,20 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/variables.scss";
+
 .my-hero {
-  background-color: #f2f7ff;
+  background-color: $my-lightblue;
   img {
     width: 90%;
     top: 20px;
     right: 0;
   }
   p {
-    color: #8e989f;
+    color: $my-gray;
   }
   .btn {
-    background-color: #377dff;
+    background-color: $my-blue;
     &:hover {
       background-color: black;
       border-color: black;
